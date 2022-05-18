@@ -8,6 +8,7 @@
 * [Technologies Used](#technologies-used)
 * [Features](#features)
 * [Deployment](#deployment)
+* [Execution](#execution)
 * [Contact](#contact)
 
 ## General Info
@@ -33,24 +34,14 @@
 
 ## Deployment
 - Download git project
-> git clone https://github.com/Artemi10/simbirsoft.git
+> git clone https://github.com/Artemi10/message_brocker_notification.git
 - Enter to project directory
-> cd ./simbirsoft
-- Chose volga-it branch
-> git checkout volga-it
-- Create Google OAuth client ID credentials (Set http://localhost:8080/login/oauth2/code/google as Authorized redirect URIs)
-> https://console.cloud.google.com/apis/credentials
-- Add to docker-compose.yml file generated Client ID
-> sed -i 's|- GOOGLE_CLIENT_ID=${client_id}|- GOOGLE_CLIENT_ID=YOUR_CLIENT_ID|' docker-compose.yml
-- Add to docker-compose.yml file generated Client Secret
-> sed -i 's|- GOOGLE_CLIENT_SECRET=${client_secret}|- GOOGLE_CLIENT_SECRET=YOUR_CLIENT_SECRET|' docker-compose.yml
+> cd ./message_brocker_notification
 - Start docker engine
 - Run docker-compose command
 > docker-compose up
-- Open project in browser
-> http://localhost:8080/
 
-![Deployment commands](screenshots/commands.png "Deployment commands")
+![Deployment commands](images/deployment.png "Deployment commands")
 
 ## Execution
 - http://localhost:8080/api/v1/auth/sign-up - Sign Up User
