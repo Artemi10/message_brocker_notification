@@ -1,0 +1,5 @@
+// mongo db
+docker run -e MONGO_INITDB_ROOT_USERNAME=artemi -e MONGO_INITDB_ROOT_PASSWORD=2424285 -p 27017:27017 --name users-db -d mongo:latest
+
+// rabbit mq
+docker run -e RABBITMQ_DEFAULT_USER=artemi -e RABBITMQ_DEFAULT_PASS=2424285 -p 15672:15672 -p 5672:5672 --name email-broker rabbitmq:management
